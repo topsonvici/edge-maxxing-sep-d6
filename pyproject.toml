@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "edge-maxxing-4090-newdream"
 description = "An edge-maxxing model submission for the 4090 newdream contest"
 requires-python = ">=3.10,<3.11"
-version = "1.0.0"
+version = "6"
 dependencies = [
     "xformers==0.0.25.post1",
     "triton==2.2.0",
@@ -19,7 +19,7 @@ dependencies = [
     "torch==2.2.2",
     "numpy<2",
     "stable-fast @ https://github.com/chengzeyi/stable-fast/releases/download/v1.0.5/stable_fast-1.0.5+torch222cu121-cp310-cp310-manylinux2014_x86_64.whl",
-    "edge-maxxing-pipelines @ git+https://github.com/womboai/edge-maxxing#subdirectory=pipelines",
+    "edge-maxxing-pipelines @ git+https://github.com/womboai/edge-maxxing@8d8ff45863416484b5b4bc547782591bbdfc696a#subdirectory=pipelines",
 ]
 
 [project.scripts]
